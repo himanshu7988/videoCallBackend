@@ -25,4 +25,8 @@ io.on("connection", (socket) => {
 	})
 })
 
+app.use("/", function (req, res) {
+	res.send('welcome')
+  });
+
 server.listen(3000, () => console.log("server is running on port 5000"))
